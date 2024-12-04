@@ -8,6 +8,7 @@ button {
     position: relative;
     overflow: hidden;
     transition: color 1s;
+    margin: 40px;
 }
 
 button:hover{
@@ -32,7 +33,6 @@ button:hover::before{
 }
 
 .glass {
-    margin-inline: 40px;
     width: 50%;
     height: 80%;
     border-top: 2px solid #ffffff75;
@@ -45,11 +45,11 @@ button:hover::before{
 }
 body{
     font-family: Arial, sans-serif;
-  background-image: url('image/bg.png');
-  background-size: cover;
-  background-repeat: no-repeat; 
-  background-attachment: fixed;
-  background-position: center;
-  align-items: center;
-  display: grid;
+    background-image: url('image/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    align-items: center;
+    display: grid;
 }

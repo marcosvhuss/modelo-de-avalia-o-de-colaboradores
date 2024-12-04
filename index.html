@@ -256,7 +256,7 @@
   <br>
  
 
-  <button onclick="calcularPontuacao()">Finalizar Avaliação</button>
+  <button type="button" onclick="calcularPontuacao()">Finalizar Avaliação</button>
 
   <div class="result" id="resultado"></div>
 
@@ -278,18 +278,19 @@
     let classificacao = "";
 
     // Condição para classificação
-    if (media >= 9) {
+    const mediaAjustada = media * 2;
+    if (mediaAjustada >= 9) {
       classificacao = "Excelente: Impacta positivamente.";
-    } else if (media >= 8) {
+    } else if (mediaAjustada >= 8) {
       classificacao = "Bom: Possui pontos muito específicos de melhoria.";
-    } else if (media >= 7) {
+    } else if (mediaAjustada >= 7) {
       classificacao = "A Melhorar: Área significativa a ser desenvolvida.";
     } else {
       classificacao = "Insatisfatório: Abaixo do esperado, exigindo atenção imediata.";
     }
 
     const resultado = document.getElementById('resultado');
-    resultado.innerHTML = `Pontuação final: ${media} de 5. <br>Classificação: ${classificacao}`;
+    resultado.innerHTML = `Pontuação final: ${mediaAjustada} de 10. <br>Classificação: ${classificacao}`;
   }
 </script>
 </div>
